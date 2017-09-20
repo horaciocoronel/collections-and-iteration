@@ -73,3 +73,32 @@ puts family_sorted_by_age
 
 movies[:beauty_and_the_beast] = ["1991", "2017"]
 puts movies
+
+############### Exercise 4 ###############
+
+family_younger_26 = family.select { |name, age|
+  age.to_i < 26
+}
+
+puts family_younger_26
+
+
+# family_eldest = family.sort  { |name, age|
+#   age.to_i
+# }
+# Get the values from a hash, sort them and select the last one (oldest)
+family_age = family.values
+family_age.sort!
+puts family_age.last
+# puts family_oldest
+
+### HELP ###
+# age_sort_eldest = age
+# puts age_sort_eldest.sort
+# # age_sort_eldest[-1]
+
+artists.delete_at(2)
+puts artists
+
+cities[2] = "2.339.092"
+puts cities
