@@ -57,5 +57,5 @@ puts coin.reverse!
 puts cities[:toronto]
 
 artists.each do |artist|
-  puts "I think #{artist} is great."
+  puts "I think #{artist} is great!"
 end
