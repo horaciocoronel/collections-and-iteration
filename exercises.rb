@@ -4,7 +4,7 @@
 fav_colours = ["red", "blue", "orange", "yellow", "purple"]
 age = [33, 29, 16, 20, 25]
 coin = ["Heads", "Tails", "Tails", "Heads", "Tails"]
-artists = ["U2", "Rolling Stones", "Armin Van Buuren"]
+artists = ["U2", "Pink Floyd", "Armin Van Buuren"]
 fav_colours_symbols = [:red, :blue, :orange, :yellow, :purple]
 
 ################ CREATE HASHES #################
@@ -45,3 +45,17 @@ puts age.sort # puts age.sort.reverse
 age << "0" #puts age
 
 puts movies[:it]
+
+############### Exercise 2 ###############
+
+puts fav_colours[-1]
+
+cities[:london] = "8.788.000" #puts cities
+
+puts coin.reverse!
+
+puts cities[:toronto]
+
+artists.each do |artist|
+  puts "I think #{artist} is great."
+end
