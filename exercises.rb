@@ -59,3 +59,17 @@ puts cities[:toronto]
 artists.each do |artist|
   puts "I think #{artist} is great!"
 end
+
+############### Exercise 3 ###############
+
+puts artists[0..1]
+
+movies.each do | movie_title, year |
+  puts "#{movie_title} came out in #{year}"
+end
+
+family_sorted_by_age = family.sort_by { |name, age| age.to_i }.reverse
+puts family_sorted_by_age
+
+movies[:beauty_and_the_beast] = ["1991", "2017"]
+puts movies
