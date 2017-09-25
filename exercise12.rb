@@ -22,3 +22,25 @@ end
 new_merged_array_age.each do | k, v|
   puts "I <3 #{k} #{v}"
 end
+
+#One year has gone by. Use map to create a new array of the ages of your friends/relatives where all of the ages are increased by 1. Output the result.
+family = {
+  :maria => 30,
+  :laura => 20,
+  :carl => 10,
+  :luis => 15
+}
+
+puts family.map {|name, age| age+1}
+
+
+#Use reduce to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation.
+
+age = age.reduce(:+)
+puts "The sum of all the ages is #{age}"
+
+coin = ["Heads", "Tails", "Tails", "Heads", "Tails"]
+
+new_coin_array = []
+new_coin_array << coin.select { |x| x == "Heads"}
+puts new_coin_array
